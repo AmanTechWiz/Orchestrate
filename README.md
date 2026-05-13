@@ -112,8 +112,9 @@ pip install -r code/requirements.txt
 Create a local `.env` (already ignored by git) and set required keys:
 
 ```bash
-OPENAI_API_KEY=...
-ANTHROPIC_API_KEY=...
+GROQ_API_KEY=*****
+GROQ_BASE_URL=https://api.groq.com/openai/v1
+GROQ_MODEL=*****
 ```
 
 ### 3) Build retrieval index
@@ -139,10 +140,3 @@ python code/main.py \
 - **Deterministic behavior:** stable outputs where possible.
 - **Structured outputs:** strict schema for reliable scoring and automation.
 
----
-
-## Notes for GitHub Viewers
-
-- The challenge is complete; this repository is now maintained as a public reference implementation.
-- Core implementation details and run commands for developers are in `code/README.md`.
-- Publishing and cleanup instructions are in `GITHUB_PUBLISHING.md`.
