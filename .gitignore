@@ -1,0 +1,44 @@
+# secrets
+.env
+.env.local
+*.pem
+*.key
+
+# deps
+node_modules/
+.pnpm-store/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cursor/
+
+# build
+dist/
+build/
+*.tsbuildinfo
+
+# editor / os
+.DS_Store
+.idea/
+.vscode/
+Thumbs.db
+
+# local data / caches the participant may create
+data/index/
+data/embeddings/
+code/.cache/
+code/run.log
+*.sqlite
+*.db
+
+# local and private challenge notes (do not publish)
+AGENTS.md
+CLAUDE.md
+evalutation_criteria.md
+excalidraw.json
+GITHUB_PUBLISHING.md
+problem_statement.md
